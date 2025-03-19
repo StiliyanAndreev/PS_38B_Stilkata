@@ -1,0 +1,11 @@
+﻿<Window x:Class="UI.Views.NamesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Names Window" Height="200" Width="300">
+
+    <Grid>
+        <TextBlock Text="This is the Names Window!"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="16" FontWeight="Bold"/>
+    </Grid>
+</Window>

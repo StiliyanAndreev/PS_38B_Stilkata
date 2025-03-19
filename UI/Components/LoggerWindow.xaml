@@ -1,0 +1,14 @@
+﻿<Window x:Class="UI.Components.LoggerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Logger Data" Height="400" Width="600">
+
+    <Grid>
+        <DataGrid Name="loggerGrid" AutoGenerateColumns="False"
+                  MouseDoubleClick="LoggerGrid_DoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Event Date" Binding="{Binding Timestamp, StringFormat=d}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

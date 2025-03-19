@@ -1,0 +1,19 @@
+﻿<Window x:Class="EasyMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:EasyMVVM"
+        Title="EasyMVVM Binding Example" Height="350" Width="400">
+
+    <Grid>
+        <!-- ViewModel Resource Binding -->
+        <Grid.Resources>
+            <vm:MainWindowVM x:Key="vm"/>
+        </Grid.Resources>
+
+        <!-- ListBox Bound to ViewModel -->
+        <ListBox ItemsSource="{Binding Source={StaticResource vm}, Path=BoundProperty}"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Width="200" Height="200"/>
+    </Grid>
+</Window>
