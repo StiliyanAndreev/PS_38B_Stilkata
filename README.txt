@@ -13,20 +13,15 @@ Logs failed login attempts with errors.
 Logs are stored in a file (log.txt).
 ✅ Commands to Test Your Code
 1. Run the Program
-sh
-Copy
-Edit
-dotnet run
+-> dotnet run
 Expected Output:
 
 It will prompt for username and password.
 If valid, it prints user details.
 If invalid, it logs the failed attempt and throws an error.
+
 2. Check the Log File
-sh
-Copy
-Edit
-cat log.txt
+-> cat log.txt
 This will display:
 ✅ Successful logins: "User XYZ logged in at [time]".
 ❌ Failed attempts: "Invalid credentials for user XYZ at [time]".
